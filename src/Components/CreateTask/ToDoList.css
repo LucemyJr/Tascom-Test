@@ -1,0 +1,161 @@
+
+
+.to-do-container{
+    width: 700px;
+    height: 452px;
+    border-radius: 10px;
+    background-color: #3d3d3d;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.to-do-container::-webkit-scrollbar{
+    width: .6rem;
+    background-color: #b5b5b5;        
+}
+.to-do-container::-webkit-scrollbar-thumb{
+    background-color: #474747;
+    }
+
+.to-do-title{
+    text-align: start;
+    padding: 20px 0 20px 20px;
+}
+
+.task-container{
+    position: relative;
+    width: 660px;
+    min-height: 61px;
+    max-height: none;
+    background-color: #474747;
+    display: flex;
+    margin: 0 20px 10px 20px;
+    padding: 10px 20px;
+    overflow-wrap: break-word;
+    text-align: start;
+    border-radius: 10px;
+    justify-content: space-between  ;
+}
+
+.checkbox-name-description{
+    display: flex;
+}
+
+.task-name{
+    width: 250px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.task-description{
+    width: 400px;
+    color: #b5b5b5;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.task-date{
+    color: #b5b5b5;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.name-description{
+    position: relative;
+    padding-left: 10px;
+}
+
+.edit-date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.close-button{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    cursor: pointer;
+}
+
+.close-btn{
+    width: 20px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    cursor: pointer;
+}
+
+.edit-btn{
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding-bottom: 12px;
+}
+
+.edit-btn:hover{
+    color: #b5b5b5;
+}
+
+.task-container .name-description input[type="text"] {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #333;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    outline: none;
+  }
+  
+  .task-container .name-description input[type="text"]:focus {
+    border-bottom: 1px solid #333;
+  }
+  
+@media screen and (max-width: 850px) {
+    .to-do-container{
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    .task-container{
+        width: 90%;
+        margin: auto auto 10px;
+        overflow-wrap: break-word;
+        text-align: start;
+        align-items: center;
+    }
+
+    .task-name{
+        width: 150px;
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    
+    .task-description{
+        width: 200px;
+        font-size: 10px;
+    }
+    
+    .task-date{
+        text-align: center;
+        font-size: 8px;
+    } 
+    
+    .edit-date{
+        align-items: center;
+    }
+    
+    .task-container .name-description input[type="text"] {
+        font-size: 12px;
+      }
+}

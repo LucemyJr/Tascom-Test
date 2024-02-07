@@ -1,0 +1,22 @@
+.finished-tasks{
+    background-color: #3d3d3d;
+    width: 340px;
+    height: 121px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.finished-tittle{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.finished-number{
+    border-bottom: 20px;
+    font-size: 56px;
+    font-weight: 600;
+}
